@@ -1,0 +1,44 @@
+.cards .container {
+    display: flex;
+    margin: 0rem auto;
+    width: 100%;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0rem 4rem 9.7rem -8rem #a6a2a2 ;
+    padding: 3rem;
+    transition: 0.5s;
+    width: 33%;
+}
+
+.card:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.card:hover {
+    box-shadow: .2rem .2rem 2rem #555252 ;
+}
+
+.card__img {
+    width: 5rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__title h3 {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:920px) {
+    .cards .container {
+        flex-direction: column;
+    }
+    .card {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+.casa-info .container {
+    align-items: center;
+    display: flex;
+}
+
+.casa-info__img {
+    width: 50%;
+}
+
+.casa-info__img img {
+    border-radius: .5rem;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.casa-info__text {
+    padding-left: 9rem;
+    width: 50%;
+}
+
+.casa-info__text h2 {
+    font-size: 3.5rem;
+}
+
+.casa-info__text p {
+    color: var(--color-p);
+    font-size: 1.5rem;
+    padding: 3rem 0;
+}
+
+.casa-info__text p strong {
+    color: black;
+    font-size: 3rem;
+}
+
+
+@media screen and (max-width:920px) {
+    .casa-info .container {
+        flex-direction: column-reverse;
+    }
+
+    .casa-info__text {
+        text-align: center;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .casa-info__img {
+        text-align: center;
+        width: 100%;
+    }
+}
